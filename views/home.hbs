@@ -1,0 +1,14 @@
+<h1>Express</h1>
+<p>Welcome to authentication</p>
+{{#each data}}
+<div class="row">
+    <h1>{{this.title}}</h1>
+    <p>Posted in {{this.category}} by {{author}} in <span>{{this.datetime}}</span></p>
+    <img src="/images/{{this.image}}" class="img">
+    <p>{{this.body}}</p>
+<button class="btn"><a href="/addPost/send/{{this.id}}" class="read">Read More</a></button>
+</div>
+{{/each}}
+
+
+

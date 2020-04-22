@@ -1,0 +1,32 @@
+<h1>Express</h1>
+<p>Welcome to authentication</p>
+{{#each post}}
+<div class="row">
+    <h1>{{this.title}}</h1>
+    <p>Posted in {{this.category}} by {{author}} in <span>{{this.datetime}}</span></p>
+    <img src="/images/{{this.image}}" class="img">
+    <p>{{this.body}}</p>
+</div>    
+{{/each}}
+<h1>Comment</h1>
+{{#each coment}}
+<div class='second_row' aria-label="comment">
+    <p>{{this.email}} : {{this.description}}</p>
+</div>
+{{/each}}
+<div class="row">    
+    <h1>Add Comment</h1>
+    <form method="POST" action="./coment">
+    {{!-- <label>{{this.id}}</label> --}}
+    <input type="hidden" name="id" value="{{this.id}}" class="form-control"><br>
+    <label>name</label>
+    <input type="text" name="name" class="form-control"><br>
+    <label>email</label>
+    <input type="text" name="email" class="form-control"><br>
+    <label>Comment</label>
+    <textarea name="description" class="form-control"></textarea><br>
+    <div class="post">
+    <button type="submit">Add Post</button>
+    </div>
+</form>
+</div>

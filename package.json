@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "'sagar'",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "express-handlebars": "^4.0.3",
+    "express-messages": "*",
+    "express-session": "1.17.0",
+    "moment": "*",
+    "monk": "*",
+    "multer": "*",
+    "mysql": "^2.18.1",
+    "serve-favicon": "2.5.0"
+  }
+}

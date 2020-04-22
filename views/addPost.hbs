@@ -1,0 +1,25 @@
+<h1>Add Post</h1>
+<form method="POST" action="./addPost/send" enctype="multipart/form-data">
+    <label>Title</label>
+    <input type="text" name="title" class="form-control"><br>
+    <label>Category</label>
+    <select name="category">
+        {{#each categories}}
+            <option>{{this}}</option>
+        {{/each}}    
+    </select><br>
+    <label>Body</label>
+    <textarea name="body1"></textarea><br>
+    <label>Main Image</label>
+    <input type="file" name="image" class="form-control"><br>
+    <label>Author</label>
+    <select name="author">
+        <option value="hari">hari</option>
+        <option value="ram">Ram</option>
+   </select><br>
+    <button type="submit">Add Post</button>
+</form>
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('body1');
+</script>
